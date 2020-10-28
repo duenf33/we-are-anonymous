@@ -27,14 +27,11 @@ const onlyEvens = function(nums){
 
 const shortNamesOnly = function(nums){
   const thing = nums.filter(function(num){
-    if(num < 7){
-      return thing;
-    // }
-    // if(!true){
-    // return false
+    if(num.length < 7){
+      return nums;
     }
   });
-  // return thing;
+  return thing;
 }
 
 const sNames = function(nums){
@@ -51,14 +48,9 @@ const sNames = function(nums){
 
 const tripleAll = function(nums){
   const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return true;
-    }
-    if(!true){
-    return false
-    }
+    // return nums * 3;
   });
-  return thing;
+  return thing * 3;
 }
 
 const negativeValues = function(nums){
@@ -122,14 +114,16 @@ const titleCaseNames = function(nums){
 
 const doubleEveryOther = function(nums){
   const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return true;
+    if(num % 2 === 1){
+      return num * 2;
+    } else {
+      return num
     }
-    if(!true){
-    return false
-    }
+    // if(!true){
+    // return false
+    // }
   });
-  return thing;
+  // return thing;
 }
 
 /*********************************
