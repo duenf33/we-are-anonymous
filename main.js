@@ -1,8 +1,136 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const onlyOdds = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 1){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
 
+const onlyEvens = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
 
+const shortNamesOnly = function(nums){
+  const thing = nums.filter(function(num){
+    if(num < 7){
+      return thing;
+    // }
+    // if(!true){
+    // return false
+    }
+  });
+  // return thing;
+}
+
+const sNames = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const tripleAll = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const negativeValues = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const questionings = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const changeToInitials = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+const doubleEven = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const titleCaseNames = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
+
+const doubleEveryOther = function(nums){
+  const thing = nums.filter(function(num){
+    if(num % 2 === 0){
+      return true;
+    }
+    if(!true){
+    return false
+    }
+  });
+  return thing;
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
