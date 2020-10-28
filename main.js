@@ -36,43 +36,34 @@ const shortNamesOnly = function(nums){
 
 const sNames = function(nums){
   const thing = nums.filter(function(num){
-    if(num % 2 === 0){
+    if(num.startsWith('S')){
       return true;
-    }
-    if(!true){
-    return false
     }
   });
   return thing;
 }
 
 const tripleAll = function(nums){
-  const thing = nums.filter(function(num){
-    // return nums * 3;
+  const thing = nums.map(function(num){
+      return num * 3;
   });
-  return thing * 3;
+  return thing;
 }
 
 const negativeValues = function(nums){
   const thing = nums.filter(function(num){
-    if(num % 2 === 0){
+    if(num === -num){
       return true;
-    }
-    if(!true){
-    return false
+    } else {
+      return num 
     }
   });
   return thing;
 }
 
 const questionings = function(nums){
-  const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return true;
-    }
-    if(!true){
-    return false
-    }
+  const thing = nums.map(function(num){
+    return num + '?'
   });
   return thing;
 }
