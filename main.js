@@ -1,16 +1,20 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+
+// it could be donw either way.
 const onlyOdds = function(nums){
-  const thing = nums.filter(function(num){
-    if(num % 2 === 1){
-      return true;
-    }
-    if(!true){
-    return false
-    }
+  return nums.filter(function(num){
+  // const thing = nums.filter(function(num){
+    return num % 2 === 1;
+    // if(num % 2 === 1){
+    //   return true;
+    // }
+    // if(!true){
+    // return false
+    // }
   });
-  return thing;
+  // return thing;
 }
 
 const onlyEvens = function(nums){
@@ -25,40 +29,55 @@ const onlyEvens = function(nums){
   return thing;
 }
 
-const shortNamesOnly = function(nums){
-  const thing = nums.filter(function(num){
-    if(num.length < 7){
-      return nums;
-    }
-  });
-  return thing;
+// both ways work
+const shortNamesOnly = function(names){
+  return names.filter(function(name){
+    return name.length < 7;
+  })
+  // const thing = nums.filter(function(num){
+  //   if(num.length < 7){
+  //     return nums;
+  //   }
+  // });
+  // return thing;
 }
 
-const sNames = function(nums){
-  const thing = nums.filter(function(num){
-    if(num.startsWith('S')){
-      return true;
-    }
-  });
-  return thing;
+//both ways work
+const sNames = function(names){
+  return names.filter(function(name){
+    return name[0] === 'S';
+  })
+  // const thing = nums.filter(function(num){
+  //   if(num.startsWith('S')){
+  //     return true;
+  //   }
+  // });
+  // return thing;
 }
 
+// both work
 const tripleAll = function(nums){
-  const thing = nums.map(function(num){
+  return nums.map(function(num){
+  // const thing = nums.map(function(num){
       return num * 3;
   });
-  return thing;
+  // return thing;
 }
 
-const negativeValues = function(nums){
-  const thing = nums.filter(function(num){
-    if(num === -num){
-      return true;
-    } else {
-      return -num; 
-    }
+// for this one only one way is working
+const negativeValues = function(numbers){
+  return numbers.map(function(number){
+    return number <= 0 ? number : number * -1;
   });
-  return thing;
+// const negativeValues = function(nums){
+//   const thing = nums.filter(function(num){
+//     if(num === -num){
+//       return true;
+//     } else {
+//       return -num; 
+//     }
+//   });
+//   return thing;
 }
 
 const questionings = function(nums){
@@ -68,50 +87,60 @@ const questionings = function(nums){
   return thing;
 }
 
-const changeToInitials = function(word){
-  const thing = word
-  .toLowerCase()
-  .split(' ')
-  .map(function(letter)
-  {
-    letter.charAt(0).toUpperCase() + letter.slice(1)
+const changeToInitials = function(names){
+  return names.map(function(name){
+    return name[0] + name[name.indexOf(' ') + 1]
   })
-  .join(' ');
+  // const thing = word
+  // .toLowerCase()
+  // .split(' ')
+  // .map(function(letter)
+  // {
+  //   letter.charAt(0).toUpperCase() + letter.slice(1)
+  // })
+  // .join(' ');
 
-  return thing;
+  // return thing;
 }
 
+// only one way works
+const doubleEven = function(numbers){
+  return numbers.map(function(number){
+    return Math.abs(number) % 2 === 1 ? number : number * 2;
+  })
+  // const thing = nums.filter(function(num){
+  //   if(num % 2 === 0){
+  //     return num
+  //   }
+  //   // num * 2;
+  // });
+  // return thing;
+}
 
-const doubleEven = function(nums){
-  const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return num
-    }
-    // num * 2;
+// only one works
+const titleCaseNames = function(names){
+  return names.map(function(name){
+  return name[0].toUpperCase()+name.slice(1).toLowerCase();
   });
-  return thing;
+//   }
+    // const thing = word.split(' ').map(function(word){
+  //   word.charAt(0).toUpperCase() + word.slice(1)
+  // }).join(' ');
+  // return thing;
 }
 
-const titleCaseNames = function(word){
-  const thing = word.split(' ').map(function(word){
-    word.charAt(0).toUpperCase() + word.slice(1)
-  }).join(' ');
-  return thing;
-}
-
-const doubleEveryOther = function(nums){
-  const thing = nums.filter(function(num){
-    if(!num % 2){
-      return num * 2;
-    } 
-    // else {
-    //   return num
-    // }
-    // if(!true){
-    // return false
-    // }
+// only one works
+const doubleEveryOther = function(numbers){
+  return numbers.map(function(number, i){
+    return i % 2 === 0 ? number : number * 2;
   });
-  return thing;
+  // const thing = nums.filter(function(num){
+  //   if(!num % 2){
+  //     return num * 2;
+  //   } 
+
+  // });
+  // return thing;
 }
 
 /*********************************
