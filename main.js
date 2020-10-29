@@ -55,7 +55,7 @@ const negativeValues = function(nums){
     if(num === -num){
       return true;
     } else {
-      return num 
+      return -num; 
     }
   });
   return thing;
@@ -68,53 +68,50 @@ const questionings = function(nums){
   return thing;
 }
 
-const changeToInitials = function(nums){
-  const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return true;
-    }
-    if(!true){
-    return false
-    }
-  });
+const changeToInitials = function(word){
+  const thing = word
+  .toLowerCase()
+  .split(' ')
+  .map(function(letter)
+  {
+    letter.charAt(0).toUpperCase() + letter.slice(1)
+  })
+  .join(' ');
+
   return thing;
 }
+
+
 const doubleEven = function(nums){
   const thing = nums.filter(function(num){
     if(num % 2 === 0){
-      return true;
+      return num
     }
-    if(!true){
-    return false
-    }
+    // num * 2;
   });
   return thing;
 }
 
-const titleCaseNames = function(nums){
-  const thing = nums.filter(function(num){
-    if(num % 2 === 0){
-      return true;
-    }
-    if(!true){
-    return false
-    }
-  });
+const titleCaseNames = function(word){
+  const thing = word.split(' ').map(function(word){
+    word.charAt(0).toUpperCase() + word.slice(1)
+  }).join(' ');
   return thing;
 }
 
 const doubleEveryOther = function(nums){
   const thing = nums.filter(function(num){
-    if(num % 2 === 1){
+    if(!num % 2){
       return num * 2;
-    } else {
-      return num
-    }
+    } 
+    // else {
+    //   return num
+    // }
     // if(!true){
     // return false
     // }
   });
-  // return thing;
+  return thing;
 }
 
 /*********************************
